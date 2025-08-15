@@ -1,1 +1,1 @@
-a blog for posting learning plan
+essays written by Eric Shen
