@@ -19,7 +19,7 @@ tags:
 
 ### Progress
 
-* **Day 1**: [Brief summary of progress made during the day]
+* **Day 1**: go to the gym
 * **Day 2**: [Brief summary of progress made during the day]
 * ...
 
