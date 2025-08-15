@@ -5,7 +5,7 @@ author:       "some people learn plan"
 header-style: text
 catalog:      true
 tags:
-    - some people
+    - plan
 ---
 # 博客访问地址 
 [https://shensunbo.github.io/Just_Do_It/](https://shensunbo.github.io/Just_Do_It/)

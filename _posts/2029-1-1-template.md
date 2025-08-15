@@ -6,6 +6,7 @@ header-style: text
 catalog:      true
 tags:
     - template
+    - plan
 ---
 
 **Week [Week Number] - [Year]**

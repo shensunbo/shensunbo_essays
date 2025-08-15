@@ -5,7 +5,7 @@ author:       "shensunbo"
 header-style: text
 catalog:      true
 tags:
-    - shensunbo
+    - plan
 ---
 
 **Week [08.20 - 08.25] - [2024]**
