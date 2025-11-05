@@ -61,6 +61,21 @@ layout: default
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
+
+                {% if site.cusdis_enabled %}
+                <!-- Cusdis 评论框 start -->
+                <div class="comment">
+                    <div id="cusdis_thread"
+                        data-host="https://cusdis.com"  <!-- 如果是自建就改地址 -->
+                        data-app-id="9502d2a1-a277-43d0-823e-752df09c9698"
+                        data-page-id="{{ page.id }}"
+                        data-page-url="{{ site.url }}{{ page.url }}"
+                        data-page-title="{{ page.title }}"
+                    ></div>
+                </div>
+                <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+                <!-- Cusdis 评论框 end -->
+                {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->

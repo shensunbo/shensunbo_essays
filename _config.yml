@@ -55,7 +55,9 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: shensunbo
+# disqus_username: shensunbo
+
+cusdis_enabled: true
 
 # Netease settings
 netease_comment: false
