@@ -5,12 +5,12 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <!-- SNS Link -->
                 {% include sns-links.html center=true %}
-                
+
                  <!-- 不蒜子访问统计 -->
-                <div style="text-align: center; margin: 15px 0; font-size: 14px; color: #666;">
+                <div class="busuanzi-counter">
                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
                     <span id="busuanzi_container_site_pv">
-                        本站总访问量 <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #2c3e50;"></span> 次
+                        📊 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
                     </span>
                 </div>
 
@@ -336,3 +336,18 @@
         });
     });
 </script>
+
+<style>
+.busuanzi-counter {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 24px;
+    color: #999;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.busuanzi-counter #busuanzi_value_site_pv {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0 3px;
+}
+</style>
