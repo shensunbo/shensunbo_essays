@@ -25,8 +25,6 @@ description: "「我们被判定自由，通过不断选择来定义自己是谁
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-    <button class="like-btn" data-post-id="{{ post.id }}">点赞</button>
-    <span class="like-count" id="like-count-{{ post.id }}"></span> 人赞过
 </div>
 <hr>
 {% endfor %}
@@ -46,39 +44,3 @@ description: "「我们被判定自由，通过不断选择来定义自己是谁
     {% endif %}
 </ul>
 {% endif %}
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 获取所有点赞按钮和点赞数量元素
-      const likeButtons = document.querySelectorAll('.like-btn');
-      const likeCounts = document.querySelectorAll('.like-count');
-  
-      // 初始化点赞状态
-      let likes = JSON.parse(localStorage.getItem('likes')) || {};
-  
-      // 更新点赞数量的状态
-      function updateUI() {
-        likeCounts.forEach(function(element) {
-          const postId = element.getAttribute('id').replace('like-count-', '');
-          element.textContent = likes[postId] || 0;
-        });
-      }
-  
-      // 初始化页面时更新 UI
-      updateUI();
-  
-      // 点击点赞按钮的事件处理程序
-      likeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          const postId = this.getAttribute('data-post-id');
-          likes[postId] = (likes[postId] || 0) + 1;
-  
-          // 保存点赞数量到 localStorage
-          localStorage.setItem('likes', JSON.stringify(likes));
-  
-          // 更新 UI
-          updateUI();
-        });
-      });
-    });
-  </script>
