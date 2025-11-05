@@ -1,0 +1,23 @@
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+{% if page.busuanzi != false %}
+<div class="busuanzi-container">
+  {% if site.busuanzi.show_site_pv %}
+    <span id="busuanzi_container_site_pv" style="display: inline;">
+      本站总访问量 <span id="busuanzi_value_site_pv" class="busuanzi-value"></span> 次
+    </span>
+  {% endif %}
+  
+  {% if site.busuanzi.show_site_uv %}
+    <span id="busuanzi_container_site_uv" style="display: inline;">
+      本站访客数 <span id="busuanzi_value_site_uv" class="busuanzi-value"></span> 人
+    </span>
+  {% endif %}
+  
+  {% if site.busuanzi.show_page_pv %}
+    <span id="busuanzi_container_page_pv" style="display: inline;">
+      本文阅读量 <span id="busuanzi_value_page_pv" class="busuanzi-value"></span> 次
+    </span>
+  {% endif %}
+</div>
+{% endif %}
