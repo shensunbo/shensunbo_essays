@@ -1,3 +1,4 @@
+---
 layout:       post
 title:        "浪费时间"
 author:       "shensunbo"

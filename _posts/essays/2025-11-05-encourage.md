@@ -1,3 +1,4 @@
+---
 layout:       post
 title:        "鼓励别人和自信"
 author:       "shensunbo"
