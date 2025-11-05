@@ -6,15 +6,19 @@
                 <!-- SNS Link -->
                 {% include sns-links.html center=true %}
 
-                 <!-- 不蒜子访问统计 -->
+                <!-- 不蒜子访问统计 -->
                 <div class="busuanzi-counter">
                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
                     <span id="busuanzi_container_site_pv">
-                        📊 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+                        📊 全站访问 <span id="busuanzi_value_site_pv"></span>
                     </span>
                     <span class="counter-separator">|</span>
                     <span id="busuanzi_container_site_uv">  
-                        👥 本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
+                        👥 访客数 <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span class="counter-separator">|</span>
+                    <span id="busuanzi_container_page_pv">  
+                        📖 本文阅读: <span id="busuanzi_value_page_pv"></span>
                     </span>
                 </div>
 
@@ -349,6 +353,7 @@
     color: #5e5d5d;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.busuanzi-counter #busuanzi_value_page_pv,
 .busuanzi-counter #busuanzi_value_site_pv,
 .busuanzi-counter #busuanzi_value_site_uv {
     font-weight: 600;
