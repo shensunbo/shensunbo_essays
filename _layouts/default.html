@@ -3,6 +3,10 @@
 
 {% include head.html %}
 
+<div style="text-align: center; margin: 20px 0; color: #666;">
+    {% include busuanzi.html %}
+</div>
+
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
 
@@ -18,9 +22,6 @@
 <img src="/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
-    <footer>
-        {% include busuanzi.html %}
-    </footer>
 </body>
 
 </html>
